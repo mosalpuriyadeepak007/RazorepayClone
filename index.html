@@ -43,7 +43,7 @@
     </head>
 
     <body>
-        <nav class="bg-deepBlue">
+        <nav class="bg-deepBlue relative">
             <div class="relative flex justify-between items-center w-11/12 max-w-[1080px] mx-auto">
                 <!--logo-->
                 <a href="/" class="py-7 pr-7 cursor-pointer">
@@ -107,11 +107,25 @@
                             arrow_right_alt
                         </span>
                     </button>
-                    <button class="visible lg:invisible text-white py-2 px-3 rounded-sm text-sm font-bold">
+                    <button id="menuButton" type="button" aria-controls="mobileMenu" aria-expanded="false"
+                        class="visible lg:invisible text-white py-2 px-3 rounded-sm text-sm font-bold transition-all duration-200 hover:bg-white/10 hover:text-lightBlue focus:outline-none focus:bg-white/10 focus:text-lightBlue">
                         <span class="material-symbols-outlined">
                             menu
                         </span>
                     </button>
+                </div>
+            </div>
+
+            <div id="mobileMenu"
+                class="lg:hidden hidden absolute left-0 right-0 top-full z-50 border-t border-white/10 bg-deepBlue px-6 pb-6 shadow-lg">
+                <div class="w-11/12 max-w-[1080px] mx-auto pt-4">
+                    <a href="#" class="block rounded-md px-3 py-3 text-white font-mullish transition-all duration-200 hover:bg-white/10 hover:text-lightBlue">Payments</a>
+                    <a href="#" class="block rounded-md px-3 py-3 text-white font-mullish transition-all duration-200 hover:bg-white/10 hover:text-lightBlue">Banking</a>
+                    <a href="#" class="block rounded-md px-3 py-3 text-white font-mullish transition-all duration-200 hover:bg-white/10 hover:text-lightBlue">Corporate Card</a>
+                    <a href="#" class="block rounded-md px-3 py-3 text-white font-mullish transition-all duration-200 hover:bg-white/10 hover:text-lightBlue">Payroll</a>
+                    <a href="#" class="block rounded-md px-3 py-3 text-white font-mullish transition-all duration-200 hover:bg-white/10 hover:text-lightBlue">Resources</a>
+                    <a href="#" class="block rounded-md px-3 py-3 text-white font-mullish transition-all duration-200 hover:bg-white/10 hover:text-lightBlue">Support</a>
+                    <a href="#" class="block rounded-md px-3 py-3 text-white font-mullish transition-all duration-200 hover:bg-white/10 hover:text-lightBlue">Pricing</a>
                 </div>
             </div>
         </nav>
@@ -141,6 +155,25 @@
                 <img src="./images/hero-bend.svg" alt="hero bend" class="w-full scale-x-100 object-fill">
             </div>
         </section>
+
+        <script>
+            const menuButton = document.getElementById('menuButton');
+            const mobileMenu = document.getElementById('mobileMenu');
+
+            menuButton.addEventListener('click', () => {
+                const isHidden = mobileMenu.classList.toggle('hidden');
+                menuButton.setAttribute('aria-expanded', String(!isHidden));
+            });
+
+            document.addEventListener('click', (event) => {
+                const clickedOutside = !mobileMenu.contains(event.target) && !menuButton.contains(event.target);
+
+                if (clickedOutside && !mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                    menuButton.setAttribute('aria-expanded', 'false');
+                }
+            });
+        </script>
 
         <!--features section-->
         <section class="relative mt-[190px] overflow-hidden py-5">
