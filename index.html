@@ -435,8 +435,9 @@
 
 
         <!--features section 2-->
-        <section class="bg-[url(./images/FS2-BG.svg)] bg-no-repeat bg-cover pb-[100px] md:pb-[350px] mt-14 pt-[8rem] md:pt-[20rem]">
-            <div class="w-11/12 max-w-[1080px] justify-between items-center mx-auto space-y-12">
+        <section
+            class="bg-[url(./images/FS2-BG.svg)] bg-no-repeat bg-cover pb-[100px] md:pb-[350px] mt-14 pt-[8rem] md:pt-[20rem] overflow-hidden relative">
+            <div class="w-11/12 max-w-[1080px] justify-between items-center mx-auto space-y-12 relative">
                 <!--heading-->
                 <div class="space-y-3">
                     <h2
@@ -454,23 +455,24 @@
                     </h2>
                     <div class="bg-greenLight h-1 w-6 rounded-md md:mx-auto"></div>
                 </div>
+
+                <img src="./images/FS2-flame-1.png"
+                    class="absolute md:-top-[142px] md:-left-[140px] w-[200px] -right-5 -top-[10rem]">
+                <img src="./images/FS2-flame-2.png"
+                    class="absolute top-[150px] right-[-180px] w-[270px] hidden md:block">
                 <div class="w-full min-h-[440px] flex flex-col relative">
-
-                    <img src="./images/FS2-flame-1.png"
-                        class="absolute md:-top-[142px] md:-left-[140px] w-[200px] -right-5 -top-[20rem]">
-                    <img src="./images/FS2-flame-2.png"
-                        class="absolute top-[150px] -right-[180px] w-[270px] hidden md:block">
-
                     <div class="relative w-full bg-[#181c2e] p-10 py-12 border border-slate-700 z-100 rounded-md ">
                         <!--left-->
                         <div class=" flex flex-col gap-12">
-                            <h1 class="hidden md:block font-mullish text-[28px] text-white font-bold leading-10 max-w-[500px]">
+                            <h1
+                                class="hidden md:block font-mullish text-[28px] text-white font-bold leading-10 max-w-[500px]">
                                 Manage your company’s finances with
                                 <img src="./images/razorpayX.svg" alt="razorpayX" class="inline-block" width="168"
                                     height="32">
                                 <span class="text-lightBlue500">Business Banking</span>
                             </h1>
-                            <h1 class="block md:hidden font-mullish text-[24px] text-white font-bold leading-10 max-w-[500px]">
+                            <h1
+                                class="block md:hidden font-mullish text-[24px] text-white font-bold leading-10 max-w-[500px]">
                                 Open and Operate
                                 fully-functional Current Accounts on RazorpayX
                             </h1>
@@ -664,9 +666,9 @@
         <section class="relative bg-white">
             <div class="relative w-11/12 max-w-[1080px] mx-auto pt-4">
                 <img src="./images/image copy 2.png" alt="dotted image"
-                    class="absolute top-[-6rem] left-[300px] w-[223px]   -z-10">
+                    class=" hidden lg:block absolute top-[-6rem] left-[300px] w-[223px]   -z-10">
                 <img src="./images/image copy 2.png" alt="dotted image"
-                    class="absolute -top-[6rem] -right-[3.5rem] w-[223px]   -z-10">
+                    class="hidden lg:block absolute -top-[6rem] -right-[3.5rem] w-[223px]   -z-10">
 
                 <div class="w-full grid md:grid-cols-2 lg:grid-cols-3 gap-y-10 gap-x-6 z-[10]">
                     <div class='relative flex items-center p-10'>
@@ -843,7 +845,7 @@
 
         <!--razorpay section-->
         <div class='bg-[#f5f8fe] relative z-0 pt-40 pb-12 -mt-[200px]'>
-            <div class="w-11/12 max-w-[1080px] mx-auto relative flex flex-row">
+            <div class="w-10/12 max-w-[1080px] mx-auto relative flex flex-col lg:flex-row justify-start lg:justify-between">
                 <!--left part-->
                 <div class="flex flex-col justify-center max-w-full lg:max-w-[calc(100%-600px)] mt-16 lg:mt-0">
                     <h2 class="font-mullish font-bold text-2xl text-deepBlueHead">Join the 50,00,000+ business using
@@ -856,23 +858,13 @@
                         online payments experience for your customers. <br /><br />
                         Focus on your business while we handle the complexities of payments for you.
                     </p>
-                    <button
-                        class="relative bg-lightBlue flex items-center justify-start text-white py-[14px] px-[18px] md:pr-[90px] rounded-md font-mullish font-semibold hover:bg-lightBlue500 transition-all duration-200 max-w-max mt-10">
-                        <span>Get Started</span>
-                        <div
-                            class="w-10 h-[60px] bg-greenLight absolute right-6 skew-x-[20deg] flex justify-center items-center">
-                            <span class="material-symbols-outlined w-[20px] h-[20px] -skew-x-[20deg]">
-                                arrow_right_alt
-                            </span>
-                        </div>
-                    </button>
                 </div>
                 <!--right part-->
-                <div class='h-[450px] lg:w-[500px] relative overflow-y-hidden mt-16 lg:mt-0'>
+                <div class='h-[450px] w-full lg:w-[500px] relative overflow-y-hidden mt-16 lg:mt-0 mx-auto'>
                     <div style="background: linear-gradient(180deg, #f4f8ff, #fff0)"
                         class="absolute w-full h-[130px] top-0 z-[200]"></div>
                     <img src="./images/comanies-f772fc25.png" alt="" width="500px"
-                        class="absolute h-auto object-cover left-0 companiesList z-20 ">
+                        class="absolute w-full max-w-[700px] h-auto object-cover left-1/2 -translate-x-1/2 lg:left-0 lg:translate-x-0 companiesList z-20">
                     <div style="background: linear-gradient(0deg, #f4f8ff, #fff0)"
                         class="absolute w-full h-[130px] bottom-0  z-[200]"></div>
                 </div>
@@ -880,7 +872,7 @@
         </div>
 
         <div class=" relative">
-            <img src="./images/image copy 2.png" alt="" class="absolute top-[6rem] left-[200px] w-[223px]  -z-10">
+            <img src="./images/image copy 2.png" alt="" class="hidden md:block absolute top-[6rem] left-[200px] w-[223px]  -z-10">
             <div class="w-10/12 max-w-[1080px] mx-auto pt-60 md:pt-20 pb-5 -mt-40 md:-mt-0">
                 <div class="space-y-3 text-center justify-center items-center flex flex-col">
                     <h3 class="font-mullish text-2xl font-bold text-center leading-[1.5] text-deepBlueHead">Razorpay
@@ -888,13 +880,13 @@
                     <div class="h-1 w-6 rounded-full bg-greenLight"></div>
                 </div>
 
-                <div class="w-full flex flex-row mt-14 justify-evenly">
+                <div class="w-full flex flex-col mx-auto md:flex-row mt-14 md:justify-evenly md:space-x-10">
                     <!-- left part -->
-                    <div class='w-[350px] h-[450px]'>
-                        <img src="./images/Kakashi.jpg" alt="" class="h-full w-full rounded-[10px] object-cover">
-                    </div>
+
+                    <img src="./images/Kakashi.jpg" alt="" width="350px" height="200px" class="mx-auto w-[400px] h-[400px] rounded-xl hover:scale-105 transition-all duration-200 cursor-pointer">
+
                     <!-- right part -->
-                    <div class="flex flex-col max-w-[400px] gap-5 mt-10 lg:mt-0 md:mt-0">
+                    <div class="flex flex-col max-w-[400px] gap-5 mt-10 lg:mt-0 md:mt-0 mx-auto">
                         <img src="./images/quotes-38b97044.svg" alt="" width="40" height="40" class="-mb-2">
                         <h2 class="font-mullish text-3xl font-extralight opacity-70 hidden md:block">Front-End Part of
                             Razorpay</h2>
@@ -914,21 +906,21 @@
                             website is to learn a lot about creating the visual part of websites, making sure users have
                             a really good experience.</p>
                         <h2 class="font-mullish text-xl font-bold text-deepBlueHead">Made with</h2>
-                        <div class="flex flex-wrap gap-4">
-                            <img src="./images/htmllogo-edab2389.png" alt="HTML Logo" width="30" height="30"
-                                class='cursor-pointer'>
-                            <img src="./images\csslogo-a548dfce.png" alt="HTML Logo" width="30" height="30"
-                                class='cursor-pointer'>
-                            <img src="./images\tailwindlogo-2ec225cd.png" alt="HTML Logo" width="30" height="30"
-                                class='cursor-pointer'>
-                            <img src="./images\JavaScript-logo-48d02175.png" alt="HTML Logo" width="30" height="30"
-                                class='cursor-pointer'>
-                            <img src="./images\googlefonts-0c54bf14.png" alt="HTML Logo" width="100" height="30"
-                                class='cursor-pointer'>
+                        <div class="flex flex-col md:flex-row gap-5 items-center">
+                            <img src="./images/htmllogo-edab2389.png" alt="HTML Logo"
+                                class='cursor-pointer md:w-[30px] md:h-[30px] w-16 h-16'>
+                            <img src="./images\csslogo-a548dfce.png" alt="HTML Logo"
+                                class='cursor-pointer md:w-[30px] md:h-[30px] w-16 h-16'>
+                            <img src="./images\tailwindlogo-2ec225cd.png" alt="HTML Logo" 
+                                class='cursor-pointer md:w-[30px] md:h-[30px] w-16 h-16'>
+                            <img src="./images\JavaScript-logo-48d02175.png" alt="HTML Logo" 
+                                class='cursor-pointer md:w-[30px] md:h-[30px] w-16 h-16'>
+                            <img src="./images\googlefonts-0c54bf14.png" alt="HTML Logo"
+                                class='cursor-pointer md:w-[100px] md:h-[30px] w-40 h-16'>
                         </div>
                     </div>
                 </div>
-                <div class="w-full flex items-center justify-center gap-2 mt-14">
+                <div class="hidden md:flex w-full items-center justify-center gap-2 mt-14">
                     <div class='h-3 w-3 bg-slate-300 rounded-full cursor-pointer'></div>
                     <div class='h-3 w-3 bg-blue-500 rounded-full cursor-pointer'></div>
                     <div class='h-3 w-3 bg-slate-300 rounded-full cursor-pointer'></div>
@@ -936,7 +928,7 @@
                 </div>
 
                 <div style="width:calc(100% - 30px);"
-                    class="absolute top-[45%] left-0 right-0 flex items-center justify-between gap-4 mt-6 px-20">
+                    class="hidden md:flex absolute top-[45%] left-0 right-0 items-center justify-between gap-4 mt-6 px-20">
                     <div
                         class="cursor-pointer p-5 rounded-full bg-blue-50 w-[80px] h-[80px] flex items-center justify-center hover:shadow-sm hover:scale-90 transition-all duration-200">
                         <span
@@ -958,9 +950,9 @@
         <!-- CTA section -->
         <section
             class="bg-[url(./images/CTABg-7965a2ac.svg)] w-full h-full bg-no-repeat bg-cover relative min-h-[510px]">
-            <div class="max-w-[1080px] mx-auto py-20 flex justify-between gap-6">
+            <div class="w-10/12 max-w-[1080px] mx-auto py-20 flex lg:justify-between gap-6">
                 <!-- left part -->
-                <div class="flex flex-col gap-5 -mt-24 md:-mt-0 justify-between">
+                <div class="flex flex-col gap-5 md:mt-0 justify-between">
                     <h3 class='font-mullish font-bold text-2xl text-white mt-[40px]'>Supercharge your business with
                         Razorpay
                     </h3>
@@ -993,11 +985,11 @@
                     </button>
                 </div>
                 <!-- right part -->
-                <img src="./images/ctaImg-e340b144.svg" alt="" width='240px' height='282px' class='mt-16 pt-5'>
+                <img src="./images/ctaImg-e340b144.svg" alt="" width='240px' height='282px' class='hidden lg:block mt-16 pt-5 pr-10'>
             </div>
         </section>
 
-        <section class="bg-[#EEF9FE] -mt-[15rem]">
+        <section class="bg-[#EEF9FE] -mt-[13rem]">
             <div
                 class="w-10/12 max-w-[1080px] grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 mx-auto pt-[12rem] lg:pt-[15rem] pb-14">
 
